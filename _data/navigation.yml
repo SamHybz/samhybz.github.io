@@ -9,14 +9,14 @@ main:
     url: /cv/
 
   - title: "Research"
-    url: /research/
-
-  - title: "Publications"
-    url: /publications/
+    url: /talks/
 
   - title: "Teaching"
     url: /teaching/    
 
   - title: "Newsfeed"
-    url: /posts/
+    url: /year-archive/
+
+  - title: "Publications"
+    url: /publications/
        
