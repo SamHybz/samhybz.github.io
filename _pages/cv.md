@@ -9,56 +9,36 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Academic experience
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* since 2021: Assistant Professor
+  * CIAMS Laboratory, Faculté des Sciences du Sport, Université Paris-Saclay
+  * Teaching: biomechanics, motion analysis, musculoskeletal modelling
+  * Research: musculoskeletal modelling for predicting movement adaptations, field applications to investigate sports performance
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2020-2021: Research and Teaching Assistant
+  * STAPS, Université Sorbonne Paris Nord
+  * Teaching: biomechanics, motor control, programming, designing
+  * Research: postural stability and breathing strategies in 10-meter pistol shooting
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2019-2020: Research and Teaching Assistant
+  * Arts et Métiers ParisTech
+  * Teaching: vibration mechanics, linear algebra, motion analysis
+  * Research: musculoskeletal modelling for sports (rugby lift)
 
 * Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * CRCHUM, Université de Montréal
+  * Quantifying soft tissue mechanical properties with ultrasound shear wave elastography 
+  * Supervisor: Pr. Guy Cloutier, Dr. Siavash Kazemirad
   
-Skills
+Students supervision
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* PhD students
+* M2 students
+* M1 students
 
-Publications
+Education
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* 2019 - Ph.D in Biomechanics - "Numerical optimization of manual wheelchair settings" (ED SMI 432)
+* M.S. in Biomechanics, BME ParisTech, 2015
+* Engineering Degree, Materials and Mechanics, Mines Nancy, 2015
