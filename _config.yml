@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Academic website"
 title_separator          : "-"
 name                     : &name "Samuel Hybois"
 description              : &description "personal description"
@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Assistant professor in biomechanics"
   location         : "Orsay, France"
-  employer         : CIAMS, Université Paris-Saclay"
+  employer         : "CIAMS, Université Paris-Saclay"
   uri              : # URL
   email            : "samuel.hybois@universite-paris-saclay.fr" 
 
