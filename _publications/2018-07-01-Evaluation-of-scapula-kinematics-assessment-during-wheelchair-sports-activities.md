@@ -5,6 +5,7 @@ permalink: /publication/2018-07-01-Evaluation-of-scapula-kinematics-assessment-d
 pubtype: conference
 date: 2018-07-01
 venue: '15th international Symposium on 3-D Analysis of Human Movement'
+paperurl: 'files/congress_com/3dAHM2018.pdf'
 citation: '&quot;Evaluation of scapula kinematics assessment during wheelchair sports activities.&quot; 15th international Symposium on 3-D Analysis of Human Movement. Salford (UK). July, 2018.'
 ---
 Use [Google Scholar](https://scholar.google.com/scholar?q=Evaluation+of+scapula+kinematics+assessment+during+wheelchair+sports+activities){:target="_blank"} for full citation
