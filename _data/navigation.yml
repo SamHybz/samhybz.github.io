@@ -8,15 +8,12 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "Research"
-    url: /talks/
+  - title: "Publications"
+    url: /publications/
 
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
 
   - title: "Newsfeed"
     url: /year-archive/
-
-  - title: "Publications"
-    url: /publications/
        
