@@ -24,6 +24,37 @@ import html
 import os
 import re
 
+# LaTeX accent commands to Unicode mapping
+LATEX_ACCENTS = {
+    "`": {"a": "à", "e": "è", "i": "ì", "o": "ò", "u": "ù",
+          "A": "À", "E": "È", "I": "Ì", "O": "Ò", "U": "Ù"},
+    "'": {"a": "á", "e": "é", "i": "í", "o": "ó", "u": "ú",
+          "A": "Á", "E": "É", "I": "Í", "O": "Ó", "U": "Ú"},
+    "^": {"a": "â", "e": "ê", "i": "î", "o": "ô", "u": "û",
+          "A": "Â", "E": "Ê", "I": "Î", "O": "Ô", "U": "Û"},
+    '"': {"a": "ä", "e": "ë", "i": "ï", "o": "ö", "u": "ü",
+          "A": "Ä", "E": "Ë", "I": "Ï", "O": "Ö", "U": "Ü"},
+    "~": {"a": "ã", "n": "ñ", "o": "õ", "A": "Ã", "N": "Ñ", "O": "Õ"},
+    "c": {"c": "ç", "C": "Ç"},
+}
+
+
+def latex_to_unicode(text):
+    """Convert LaTeX accent commands to Unicode characters."""
+    # Handle {\cmd{char}} patterns, e.g. {\'{e}} or {\c{c}}
+    def replace_accent(m):
+        cmd = m.group(1)
+        char = m.group(2)
+        return LATEX_ACCENTS.get(cmd, {}).get(char, char)
+
+    text = re.sub(r"\{\\([`'^\"~c])\{([a-zA-Z])\}\}", replace_accent, text)
+    # Handle \cmd{char} without outer braces
+    text = re.sub(r"\\([`'^\"~c])\{([a-zA-Z])\}", replace_accent, text)
+    # Handle remaining braces and backslashes
+    text = text.replace("{", "").replace("}", "").replace("\\", "")
+    return text
+
+
 # todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     "proceeding": {
@@ -81,10 +112,7 @@ for pubsource in publist:
 
             # strip out {} as needed (some bibtex entries that maintain formatting)
             clean_title = (
-                b["title"]
-                .replace("{", "")
-                .replace("}", "")
-                .replace("\\", "")
+                latex_to_unicode(b["title"])
                 .replace(" ", "-")
             )
 
@@ -102,9 +130,9 @@ for pubsource in publist:
                 citation = (
                     citation
                     + " "
-                    + author.first_names[0]
+                    + latex_to_unicode(author.first_names[0])
                     + " "
-                    + author.last_names[0]
+                    + latex_to_unicode(author.last_names[0])
                     + ", "
                 )
 
@@ -113,15 +141,15 @@ for pubsource in publist:
                 citation
                 + '"'
                 + html_escape(
-                    b["title"].replace("{", "").replace("}", "").replace("\\", "")
+                    latex_to_unicode(b["title"])
                 )
                 + '."'
             )
 
             # add venue logic depending on citation type
-            venue = publist[pubsource]["venue-pretext"] + b[
-                publist[pubsource]["venuekey"]
-            ].replace("{", "").replace("}", "").replace("\\", "")
+            venue = publist[pubsource]["venue-pretext"] + latex_to_unicode(
+                b[publist[pubsource]["venuekey"]]
+            )
 
             citation = citation + " " + html_escape(venue)
             citation = citation + ", " + pub_year + "."
@@ -130,7 +158,7 @@ for pubsource in publist:
             md = (
                 '---\ntitle: "'
                 + html_escape(
-                    b["title"].replace("{", "").replace("}", "").replace("\\", "")
+                    latex_to_unicode(b["title"])
                 )
                 + '"\n'
             )
