@@ -43,7 +43,7 @@ author_profile: true
 {% assign sorted = site.publications | sort: "date" | reverse %}
 
 <div class="pub-section">
-  <h2 class="recent-title">Recent Journal Articles</h2>
+  <h2 class="recent-title">Latest Journal Articles</h2>
   {% assign count = 0 %}
   {% for post in sorted %}
     {% if post.pubtype == "journal" and count < 2 %}
@@ -57,7 +57,7 @@ author_profile: true
 </div>
 
 <div class="pub-section">
-  <h2 class="recent-title">Recent Conference Communications</h2>
+  <h2 class="recent-title">Latest Conference Communications</h2>
   {% assign count = 0 %}
   {% for post in sorted %}
     {% if post.pubtype == "conference" and count < 2 %}
