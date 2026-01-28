@@ -6,6 +6,6 @@ pubtype: conference
 date: 2018-05-01
 venue: 'XIXe Journées francophones en activités physiques adaptées'
 paperurl: 'https://doi.org/10.1016%2Fj.scispo.2018.03.028'
-citation: ' Joseph Bascou,  Christophe Sauret,  Samuel Hybois,  Hélène Pillet, &quot;Effet du carrossage en fauteuil roulant~: une approche numérique.&quot; Science &amp;amp; Sports, 2018.'
+citation: ' Joseph Bascou,  Christophe Sauret,  Samuel Hybois,  Hélène Pillet, &quot;Effet du carrossage en fauteuil roulant~: une approche numérique.&quot; XIXe Journées francophones en activités physiques adaptées'
 ---
 [Access paper here](https://doi.org/10.1016%2Fj.scispo.2018.03.028){:target="_blank"}
