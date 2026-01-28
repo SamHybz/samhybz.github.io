@@ -2,6 +2,7 @@
 title: "Optimal Control Formulation For Manual Wheelchair Locomotion Simulations: Influence Of Anteroposterior Stability"
 collection: publications
 permalink: /publication/2023-08-01-Optimal-Control-Formulation-For-Manual-Wheelchair-Locomotion-Simulations-Influence-Of-Anteroposterior-Stability
+pubtype: journal
 date: 2023-08-01
 venue: 'Journal of Biomechanical Engineering'
 paperurl: 'https://doi.org/10.1115%2F1.4063274'

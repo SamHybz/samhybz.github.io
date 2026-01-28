@@ -2,6 +2,7 @@
 title: "Effet du carrossage en fauteuil roulant~: une approche numérique"
 collection: publications
 permalink: /publication/2018-05-01-Effet-du-carrossage-en-fauteuil-roulant-une-approche-numrique
+pubtype: conference
 date: 2018-05-01
 venue: 'Science &amp; Sports'
 paperurl: 'https://doi.org/10.1016%2Fj.scispo.2018.03.028'

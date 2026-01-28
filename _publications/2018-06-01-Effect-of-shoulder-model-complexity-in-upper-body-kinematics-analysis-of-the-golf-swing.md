@@ -2,6 +2,7 @@
 title: "Effect of shoulder model complexity in upper-body kinematics analysis of the golf swing"
 collection: publications
 permalink: /publication/2018-06-01-Effect-of-shoulder-model-complexity-in-upper-body-kinematics-analysis-of-the-golf-swing
+pubtype: journal
 date: 2018-06-01
 venue: 'Journal of Biomechanics'
 paperurl: 'https://doi.org/10.1016%2Fj.jbiomech.2018.04.025'

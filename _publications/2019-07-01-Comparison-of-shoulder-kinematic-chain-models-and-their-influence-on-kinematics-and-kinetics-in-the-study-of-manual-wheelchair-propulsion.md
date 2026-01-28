@@ -2,6 +2,7 @@
 title: "Comparison of shoulder kinematic chain models and their influence on kinematics and kinetics in the study of manual wheelchair propulsion"
 collection: publications
 permalink: /publication/2019-07-01-Comparison-of-shoulder-kinematic-chain-models-and-their-influence-on-kinematics-and-kinetics-in-the-study-of-manual-wheelchair-propulsion
+pubtype: journal
 date: 2019-07-01
 venue: 'Medical Engineering &amp; Physics'
 paperurl: 'https://doi.org/10.1016%2Fj.medengphy.2019.06.002'

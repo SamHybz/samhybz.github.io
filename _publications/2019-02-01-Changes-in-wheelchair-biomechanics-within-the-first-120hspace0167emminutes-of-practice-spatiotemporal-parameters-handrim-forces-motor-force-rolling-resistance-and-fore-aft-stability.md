@@ -2,6 +2,7 @@
 title: "Changes in wheelchair biomechanics within the first 120hspace0.167emminutes of practice: spatiotemporal parameters, handrim forces, motor force, rolling resistance and fore-aft stability"
 collection: publications
 permalink: /publication/2019-02-01-Changes-in-wheelchair-biomechanics-within-the-first-120hspace0167emminutes-of-practice-spatiotemporal-parameters-handrim-forces-motor-force-rolling-resistance-and-fore-aft-stability
+pubtype: journal
 date: 2019-02-01
 venue: 'Disability and Rehabilitation: Assistive Technology'
 paperurl: 'https://doi.org/10.1080%2F17483107.2019.1571117'

@@ -2,6 +2,7 @@
 title: "On the Influence of the Shoulder Kinematic Chain on Joint Kinematics and Musculotendon Lengths During Wheelchair Propulsion Estimated From Multibody Kinematics Optimization"
 collection: publications
 permalink: /publication/2019-07-01-On-the-Influence-of-the-Shoulder-Kinematic-Chain-on-Joint-Kinematics-and-Musculotendon-Lengths-During-Wheelchair-Propulsion-Estimated-From-Multibody-Kinematics-Optimization
+pubtype: journal
 date: 2019-07-01
 venue: 'Journal of Biomechanical Engineering'
 paperurl: 'https://doi.org/10.1115%2F1.4043441'
