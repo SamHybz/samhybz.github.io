@@ -1,0 +1,4 @@
+title	type	url_slug	venue	date	location	description
+Teaching experience 1	Undergraduate course	2014-spring-teaching-1	University 1, Department	2014-01-01	City, Country	This is a description of a teaching experience. You can use markdown like any other post.
+Teaching experience 2	Workshop	2015-spring-teaching-2	University 1, Department	2015-01-01	City, Country	This is a description of a teaching experience. You can use markdown like any other post.
+Teaching experience 3	Hackathon	2025-summer-school	Université Paris-Saclay	2025-06-01	Orsay, France	Creating an IMU-driven serious game
