@@ -1,0 +1,284 @@
+/* ==========================================================================
+   CV TIMELINE STYLES
+   ========================================================================== */
+
+.cv-section {
+  margin-bottom: 3em;
+}
+
+.cv-section-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid var(--global-link-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+/* Timeline container */
+.cv-timeline {
+  position: relative;
+  padding-left: 80px;
+
+  @include breakpoint(max-width $medium) {
+    padding-left: 70px;
+  }
+
+  /* Vertical line */
+  &::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--global-link-color), var(--global-border-color));
+    border-radius: 2px;
+
+    @include breakpoint(max-width $medium) {
+      left: 25px;
+    }
+  }
+}
+
+/* Individual timeline entry */
+.cv-entry {
+  position: relative;
+  margin-bottom: 2.5em;
+  padding: 1.5em;
+  background: var(--global-background-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transform: translateX(4px);
+  }
+
+  /* Timeline dot */
+  &::before {
+    content: '';
+    position: absolute;
+    left: -58px;
+    top: 1.8em;
+    width: 12px;
+    height: 12px;
+    background: var(--global-link-color);
+    border: 3px solid var(--global-background-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--global-link-color);
+
+    @include breakpoint(max-width $medium) {
+      left: -53px;
+    }
+  }
+}
+
+/* Entry header with logo */
+.cv-entry-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.cv-entry-logo {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid var(--global-border-color);
+
+  @include breakpoint(max-width $small) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.cv-entry-title-block {
+  flex-grow: 1;
+}
+
+.cv-entry-title {
+  font-size: 1.15em;
+  font-weight: 600;
+  margin: 0 0 0.25em 0;
+  color: var(--global-text-color);
+}
+
+.cv-entry-date {
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--global-link-color);
+  background: rgba(0, 123, 255, 0.1);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+
+.cv-entry-institution {
+  font-size: 0.95em;
+  color: var(--global-text-color-light);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Entry content */
+.cv-entry-content {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid var(--global-border-color);
+
+  ul {
+    margin: 0;
+    padding-left: 1.2em;
+
+    li {
+      margin-bottom: 0.4em;
+      font-size: 0.95em;
+      line-height: 1.5;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  p {
+    margin: 0 0 0.5em 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Tags for skills/topics */
+.cv-entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.cv-tag {
+  font-size: 0.8em;
+  padding: 0.25em 0.6em;
+  background: var(--global-border-color);
+  border-radius: 4px;
+  color: var(--global-text-color-light);
+}
+
+/* Education section - compact style */
+.cv-education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-education-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1.25em;
+  margin-bottom: 1em;
+  background: var(--global-background-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cv-education-logo {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  padding: 4px;
+  border: 1px solid var(--global-border-color);
+}
+
+.cv-education-details {
+  flex-grow: 1;
+}
+
+.cv-education-degree {
+  font-weight: 600;
+  margin: 0 0 0.25em 0;
+  font-size: 1em;
+}
+
+.cv-education-school {
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+  margin: 0 0 0.25em 0;
+}
+
+.cv-education-year {
+  font-size: 0.85em;
+  color: var(--global-link-color);
+  font-weight: 500;
+}
+
+.cv-education-thesis {
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-top: 0.5em;
+}
+
+/* Responsive adjustments */
+@include breakpoint(max-width $small) {
+  .cv-timeline {
+    padding-left: 20px;
+
+    &::before {
+      left: 5px;
+      width: 2px;
+    }
+  }
+
+  .cv-entry {
+    padding: 1em;
+
+    &::before {
+      left: -19px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .cv-entry-header {
+    flex-direction: column;
+  }
+
+  .cv-entry-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cv-education-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
