@@ -46,7 +46,7 @@
 /* Individual timeline entry */
 .cv-entry {
   position: relative;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
   padding: 1.5em;
   background: var(--global-background-color);
   border: 1px solid var(--global-border-color);
@@ -88,17 +88,17 @@
 
 .cv-entry-logo {
   flex-shrink: 0;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: 8px;
   background: #fff;
-  padding: 5px;
+  padding: 6px;
   border: 1px solid var(--global-border-color);
 
   @include breakpoint(max-width $small) {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -190,8 +190,8 @@
   display: flex;
   align-items: flex-start;
   gap: 1em;
-  padding: 1.25em;
-  margin-bottom: 1em;
+  padding: 1em;
+  margin-bottom: 0.75em;
   background: var(--global-background-color);
   border: 1px solid var(--global-border-color);
   border-radius: 8px;
@@ -208,12 +208,12 @@
 
 .cv-education-logo {
   flex-shrink: 0;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   border-radius: 6px;
   background: #fff;
-  padding: 4px;
+  padding: 5px;
   border: 1px solid var(--global-border-color);
 }
 
@@ -244,6 +244,38 @@
   font-style: italic;
   color: var(--global-text-color-light);
   margin-top: 0.5em;
+}
+
+.cv-education-jury {
+  font-size: 0.85em;
+  color: var(--global-text-color-light);
+  margin-top: 0.4em;
+  line-height: 1.4;
+}
+
+.cv-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-top: 0.6em;
+  padding: 0.4em 0.8em;
+  font-size: 0.85em;
+  color: var(--global-link-color);
+  background: rgba(0, 123, 255, 0.08);
+  border: 1px solid var(--global-link-color);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--global-link-color);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 1.1em;
+  }
 }
 
 /* Responsive adjustments */

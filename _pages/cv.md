@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -94,6 +94,8 @@ redirect_from:
         <p class="cv-education-school">Arts et Métiers ParisTech, France</p>
         <span class="cv-education-year">2016 - 2019</span>
         <p class="cv-education-thesis">"Numerical optimization of manual wheelchair settings"</p>
+        <p class="cv-education-jury"><strong>Jury:</strong> G. Dumont (Président), L. Chèze (Rapporteur), N. Rezzoug (Rapporteur), L. van der Woude (Examinateur), A. Thévenon (Examinateur), H. Pillet (Directrice), C. Sauret (Co-encadrant), J. Bascou (Co-encadrant)</p>
+        <a href="{{ base_path }}/files/manuscrit_These_SamuelHybois_vFinale.pdf" class="cv-download-link"><i class="fas fa-file-pdf"></i> Manuscrit</a>
       </div>
     </li>
     <li class="cv-education-item">
